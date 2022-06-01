@@ -6,4 +6,4 @@ for i in range(9):
         elif ((i != 8) or (j != 9)):
             print("{}{}, ".format(i, j), end='')
         else:
-            print ("{}{}".format(i,j))
+            print("{}{}".format(i, j))

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import hidden_4
+from hidden_4 import *
 names = dir(hidden_4)
 length = len(names)
 if __name__ == "__main__":
-    for i in range(1, length):
+    for i in range(0, length):
         print("{}".format(names[i]))

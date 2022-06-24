@@ -10,8 +10,6 @@ class Square:
 
 
     """
-
-
     def __init__(self, size):
         """init function to initialize the objects
 
@@ -19,6 +17,4 @@ class Square:
         Args:
             size: size of the sqaure
         """
-
-
         self.__size = size

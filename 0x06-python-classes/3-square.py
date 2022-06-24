@@ -14,6 +14,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be an integer")
         self.__size = size
+
     def area(self):
         """returns current square area"""
         return self.__size ** 2

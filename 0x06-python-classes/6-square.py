@@ -38,11 +38,11 @@ class Square:
         setter: set data"""
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if (type(value[0]) is not int) AND (type(value[1]) is not int):
+        if (type(value[0]) is not int) or (type(value[1]) is not int):
             raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 :
             raise TypeError("position must be a tuple of 2 positive integers")
-        if (type(value[0]) is not int) AND (type(value[1]) is not int):
+        if (type(value[0]) is not int) or (type(value[1]) is not int):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
@@ -63,4 +63,3 @@ class Square:
                 for k in range(self.size):
                     print("#", end="")
                 print()
-

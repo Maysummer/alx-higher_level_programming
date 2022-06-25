@@ -36,13 +36,19 @@ class Square:
     def position(self, value):
         """attr: Private instance attribute: position
         setter: set data"""
-        if (value[0] & value[1]) < 0:
+        if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if (type(value[0]) is not int) AND (type(value[1]) is not int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if value[0] < 0 :
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if (type(value[0]) is not int) AND (type(value[1]) is not int):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
         """return current square area"""
-        return self.size
+        return self.size ** 2
 
     def my_print(self):
         """prints in stdout the square with the character #"""

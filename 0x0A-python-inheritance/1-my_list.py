@@ -8,4 +8,4 @@ class MyList(list):
         """prints the list, but sorted (ascending sort)"""
         new_list = self[:]
         new_list.sort()
-        print(new_list)
+        print("{}".format(new_list))

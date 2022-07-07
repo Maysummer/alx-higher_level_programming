@@ -4,8 +4,11 @@
 
 class MyList(list):
     """class MyList that inherits from list"""
+
+    def __init__(self):
+        pass
+
     def print_sorted(self):
         """prints the list, but sorted (ascending sort)"""
-        new_list = self[:]
-        new_list.sort()
-        print("{}".format(new_list))
+        new_list = sorted(self)
+        print(new_list)

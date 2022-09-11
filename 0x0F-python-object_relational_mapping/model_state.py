@@ -8,10 +8,13 @@ import sys
 
 Base = declarative_base()
 
-engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format('root', 'root', 'hbtn_0e_6_usa', pool_pre_ping=True)
+engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
+                       .format('root', 'root', 'hbtn_0e_6_usa'),
+                       pool_pre_ping=True)
+
 
 class State(Base):
     '''CLass State'''
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True, primary_key=True)
-    name = Column(String(128), nullable = False)
+    name = Column(String(128), nullable=False)

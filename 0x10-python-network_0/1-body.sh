@@ -1,2 +1,3 @@
 #!/bin/bash
-curl -sL -X GET $1
+# take URL, send GET request to the URL, display reponse's body
+curl -sL -G $1

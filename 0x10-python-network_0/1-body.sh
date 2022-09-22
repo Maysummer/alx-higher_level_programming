@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sL -G $1
+curl -sL -X GET $1

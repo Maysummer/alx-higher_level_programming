@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """find a peak in an unsorted array"""
 
 

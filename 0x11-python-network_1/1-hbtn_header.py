@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""script that takes a url, sends a request & displays the value of 'X-Request-ID' in the header"""
+"""script that takes a url, sends a request & displays the
+value of 'X-Request-ID' in the header"""
 
 
 if __name__ == "__main__":
